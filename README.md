@@ -5,30 +5,31 @@
 [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](https://github.com/azzindani)
 ---
 
-# 🧠 LLM Preview in Google Colab
+# 🧠 LLM Model Preview
 
-This repository offers quick previews of various **Large Language Models (LLMs)** running in Google Colab. Use this to explore how different models respond to prompts — no setup required.
+This repository contains notebooks to preview and test **Large Language Models (LLMs)** such as LLaMA, Falcon, Mistral, etc., using Hugging Face or other model hubs.
 
-## 🔍 What's Included
+You can run the notebooks in **Google Colab** or **Kaggle Notebooks** with just a few steps.
 
-- 🚀 Preloaded notebooks for testing LLMs (transformers, instruction-tuned, chat-style, etc.)
-- 🧪 Easy-to-edit prompt cells for quick experimentation
-- ✅ Runs entirely in Colab – no local setup needed
+---
 
-## ⚙️ Requirements
+## 🚀 How to Run in Colab or Kaggle
 
-- Google Colab (GPU runtime recommended)
-- Hugging Face account (for models with gated access)
+### 📌 Google Colab
 
-All required Python packages (like `transformers`, `accelerate`, etc.) will be auto-installed in each notebook.
+1. Go to [Google Colab](https://colab.research.google.com).
+2. Click on the **"File" > "Upload Notebook"** menu.
+3. Upload the `.ipynb` file from this repository.
+4. Make sure to enable GPU:
+   - Click **Runtime > Change runtime type**
+   - Set **Hardware accelerator** to **GPU**
+5. Run all cells.
 
-## 🚀 How to Use
+### 📌 Kaggle Notebooks
 
-1. Click a [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](#)
-2. Run the notebook cell-by-cell.
-3. Modify the prompt cell to try different inputs.
-4. View the model's response instantly.
-
-## 🔐 Note
-
-Some models may require authentication with a Hugging Face token. Instructions are included in each notebook.
+1. Go to [Kaggle Notebooks](https://www.kaggle.com/code).
+2. Click on **"New Notebook"**.
+3. Upload the `.ipynb` file.
+4. On the right sidebar, set **Accelerator** to **GPU (NVIDIA T4)**.
+5. Make sure to add **Internet access** if models are loaded from Hugging Face.
+6. Run the cells.
